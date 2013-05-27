@@ -52,7 +52,7 @@ else
     ZIP=$(basename $(grep "Package OTA" "$LOG_DIR"/"$TARGET_PRODUCT"_"$DATE"_bot.log | cut -f3 -d ' '))
 fi
 
-BUILDBOT=$BUILD_ROOT/vendor/$TARGET_VENDOR/bot/
+BUILDBOT=$BUILD_ROOT/vendor/aokp/bot/
 
 # execute finishing scripts (md5, upload, etc) only if the build was successful (ie. actually produced a .zip)
 if [[ $ZIP == *.zip* ]]; then
